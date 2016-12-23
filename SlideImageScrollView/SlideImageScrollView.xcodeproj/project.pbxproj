@@ -1,0 +1,752 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04BC262D75F0B967D02141F1 /* Pods_SlideImageScrollViewUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA7441091185108ED89C450E /* Pods_SlideImageScrollViewUITests.framework */; };
+		47430CA91E0CC92700E6F168 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47430CA81E0CC92700E6F168 /* AppDelegate.swift */; };
+		47430CAB1E0CC92700E6F168 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47430CAA1E0CC92700E6F168 /* ViewController.swift */; };
+		47430CAE1E0CC92700E6F168 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47430CAC1E0CC92700E6F168 /* Main.storyboard */; };
+		47430CB01E0CC92700E6F168 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47430CAF1E0CC92700E6F168 /* Assets.xcassets */; };
+		47430CB31E0CC92700E6F168 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47430CB11E0CC92700E6F168 /* LaunchScreen.storyboard */; };
+		47430CBE1E0CC92800E6F168 /* SlideImageScrollViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47430CBD1E0CC92800E6F168 /* SlideImageScrollViewTests.swift */; };
+		47430CC91E0CC92800E6F168 /* SlideImageScrollViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47430CC81E0CC92800E6F168 /* SlideImageScrollViewUITests.swift */; };
+		47430CD91E0CC97100E6F168 /* SlideImageScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47430CD81E0CC97100E6F168 /* SlideImageScrollView.swift */; };
+		47430CDB1E0D056A00E6F168 /* ImageBannerListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47430CDA1E0D056A00E6F168 /* ImageBannerListModel.swift */; };
+		6075D634B0551F8242B95B24 /* Pods_SlideImageScrollView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2C722AA18AC0C50F681EE71 /* Pods_SlideImageScrollView.framework */; };
+		CA0FC6725DC36EA11FD84125 /* Pods_SlideImageScrollViewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA472785ED4FEBB70FA569E4 /* Pods_SlideImageScrollViewTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		47430CBA1E0CC92800E6F168 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47430C9D1E0CC92700E6F168 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47430CA41E0CC92700E6F168;
+			remoteInfo = SlideImageScrollView;
+		};
+		47430CC51E0CC92800E6F168 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47430C9D1E0CC92700E6F168 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47430CA41E0CC92700E6F168;
+			remoteInfo = SlideImageScrollView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2142CF1E5B8D659D8B88D56B /* Pods-SlideImageScrollView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideImageScrollView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SlideImageScrollView/Pods-SlideImageScrollView.debug.xcconfig"; sourceTree = "<group>"; };
+		47430CA51E0CC92700E6F168 /* SlideImageScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideImageScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		47430CA81E0CC92700E6F168 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		47430CAA1E0CC92700E6F168 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		47430CAD1E0CC92700E6F168 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		47430CAF1E0CC92700E6F168 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		47430CB21E0CC92700E6F168 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		47430CB41E0CC92700E6F168 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47430CB91E0CC92800E6F168 /* SlideImageScrollViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlideImageScrollViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		47430CBD1E0CC92800E6F168 /* SlideImageScrollViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideImageScrollViewTests.swift; sourceTree = "<group>"; };
+		47430CBF1E0CC92800E6F168 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47430CC41E0CC92800E6F168 /* SlideImageScrollViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlideImageScrollViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		47430CC81E0CC92800E6F168 /* SlideImageScrollViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideImageScrollViewUITests.swift; sourceTree = "<group>"; };
+		47430CCA1E0CC92800E6F168 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47430CD81E0CC97100E6F168 /* SlideImageScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideImageScrollView.swift; sourceTree = "<group>"; };
+		47430CDA1E0D056A00E6F168 /* ImageBannerListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageBannerListModel.swift; sourceTree = "<group>"; };
+		876C725CCE3446BFD81706A8 /* Pods-SlideImageScrollViewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideImageScrollViewUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SlideImageScrollViewUITests/Pods-SlideImageScrollViewUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		881AC77F7061116064AF9902 /* Pods-SlideImageScrollViewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideImageScrollViewUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlideImageScrollViewUITests/Pods-SlideImageScrollViewUITests.release.xcconfig"; sourceTree = "<group>"; };
+		90E6DC2737212C53D20DDE2C /* Pods-SlideImageScrollViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideImageScrollViewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlideImageScrollViewTests/Pods-SlideImageScrollViewTests.release.xcconfig"; sourceTree = "<group>"; };
+		9BAB514CB941BF3C5CB66A4E /* Pods-SlideImageScrollView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideImageScrollView.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlideImageScrollView/Pods-SlideImageScrollView.release.xcconfig"; sourceTree = "<group>"; };
+		9E1D76E244A9ED4C1A5D9359 /* Pods-SlideImageScrollViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideImageScrollViewTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SlideImageScrollViewTests/Pods-SlideImageScrollViewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AA7441091185108ED89C450E /* Pods_SlideImageScrollViewUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlideImageScrollViewUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2C722AA18AC0C50F681EE71 /* Pods_SlideImageScrollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlideImageScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA472785ED4FEBB70FA569E4 /* Pods_SlideImageScrollViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlideImageScrollViewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		47430CA21E0CC92700E6F168 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6075D634B0551F8242B95B24 /* Pods_SlideImageScrollView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47430CB61E0CC92800E6F168 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA0FC6725DC36EA11FD84125 /* Pods_SlideImageScrollViewTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47430CC11E0CC92800E6F168 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04BC262D75F0B967D02141F1 /* Pods_SlideImageScrollViewUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		47430C9C1E0CC92700E6F168 = {
+			isa = PBXGroup;
+			children = (
+				47430CA71E0CC92700E6F168 /* SlideImageScrollView */,
+				47430CBC1E0CC92800E6F168 /* SlideImageScrollViewTests */,
+				47430CC71E0CC92800E6F168 /* SlideImageScrollViewUITests */,
+				47430CA61E0CC92700E6F168 /* Products */,
+				A71D6210E5C0C02B73029351 /* Pods */,
+				C3D7A83F6D2DAD38E8C1C3F2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		47430CA61E0CC92700E6F168 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47430CA51E0CC92700E6F168 /* SlideImageScrollView.app */,
+				47430CB91E0CC92800E6F168 /* SlideImageScrollViewTests.xctest */,
+				47430CC41E0CC92800E6F168 /* SlideImageScrollViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		47430CA71E0CC92700E6F168 /* SlideImageScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				47430CA81E0CC92700E6F168 /* AppDelegate.swift */,
+				47430CAA1E0CC92700E6F168 /* ViewController.swift */,
+				47430CD71E0CC95F00E6F168 /* SlideImageScrollView */,
+				47430CD61E0CC93800E6F168 /* Supporting Files */,
+			);
+			path = SlideImageScrollView;
+			sourceTree = "<group>";
+		};
+		47430CBC1E0CC92800E6F168 /* SlideImageScrollViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				47430CBD1E0CC92800E6F168 /* SlideImageScrollViewTests.swift */,
+				47430CBF1E0CC92800E6F168 /* Info.plist */,
+			);
+			path = SlideImageScrollViewTests;
+			sourceTree = "<group>";
+		};
+		47430CC71E0CC92800E6F168 /* SlideImageScrollViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				47430CC81E0CC92800E6F168 /* SlideImageScrollViewUITests.swift */,
+				47430CCA1E0CC92800E6F168 /* Info.plist */,
+			);
+			path = SlideImageScrollViewUITests;
+			sourceTree = "<group>";
+		};
+		47430CD61E0CC93800E6F168 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				47430CAC1E0CC92700E6F168 /* Main.storyboard */,
+				47430CAF1E0CC92700E6F168 /* Assets.xcassets */,
+				47430CB11E0CC92700E6F168 /* LaunchScreen.storyboard */,
+				47430CB41E0CC92700E6F168 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		47430CD71E0CC95F00E6F168 /* SlideImageScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				47430CD81E0CC97100E6F168 /* SlideImageScrollView.swift */,
+				47430CDA1E0D056A00E6F168 /* ImageBannerListModel.swift */,
+			);
+			path = SlideImageScrollView;
+			sourceTree = "<group>";
+		};
+		A71D6210E5C0C02B73029351 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2142CF1E5B8D659D8B88D56B /* Pods-SlideImageScrollView.debug.xcconfig */,
+				9BAB514CB941BF3C5CB66A4E /* Pods-SlideImageScrollView.release.xcconfig */,
+				9E1D76E244A9ED4C1A5D9359 /* Pods-SlideImageScrollViewTests.debug.xcconfig */,
+				90E6DC2737212C53D20DDE2C /* Pods-SlideImageScrollViewTests.release.xcconfig */,
+				876C725CCE3446BFD81706A8 /* Pods-SlideImageScrollViewUITests.debug.xcconfig */,
+				881AC77F7061116064AF9902 /* Pods-SlideImageScrollViewUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C3D7A83F6D2DAD38E8C1C3F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2C722AA18AC0C50F681EE71 /* Pods_SlideImageScrollView.framework */,
+				FA472785ED4FEBB70FA569E4 /* Pods_SlideImageScrollViewTests.framework */,
+				AA7441091185108ED89C450E /* Pods_SlideImageScrollViewUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		47430CA41E0CC92700E6F168 /* SlideImageScrollView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47430CCD1E0CC92800E6F168 /* Build configuration list for PBXNativeTarget "SlideImageScrollView" */;
+			buildPhases = (
+				206E409FB97ED6CB0DA13B2F /* [CP] Check Pods Manifest.lock */,
+				47430CA11E0CC92700E6F168 /* Sources */,
+				47430CA21E0CC92700E6F168 /* Frameworks */,
+				47430CA31E0CC92700E6F168 /* Resources */,
+				9DD3A125E5438D8E554C4413 /* [CP] Embed Pods Frameworks */,
+				54526DC74DB13305B2CCD21B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SlideImageScrollView;
+			productName = SlideImageScrollView;
+			productReference = 47430CA51E0CC92700E6F168 /* SlideImageScrollView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		47430CB81E0CC92800E6F168 /* SlideImageScrollViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47430CD01E0CC92800E6F168 /* Build configuration list for PBXNativeTarget "SlideImageScrollViewTests" */;
+			buildPhases = (
+				59C6E978C8027793985B6416 /* [CP] Check Pods Manifest.lock */,
+				47430CB51E0CC92800E6F168 /* Sources */,
+				47430CB61E0CC92800E6F168 /* Frameworks */,
+				47430CB71E0CC92800E6F168 /* Resources */,
+				07EB4A53BF3A36D44BF83C31 /* [CP] Embed Pods Frameworks */,
+				11129686A379831D2B43878D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				47430CBB1E0CC92800E6F168 /* PBXTargetDependency */,
+			);
+			name = SlideImageScrollViewTests;
+			productName = SlideImageScrollViewTests;
+			productReference = 47430CB91E0CC92800E6F168 /* SlideImageScrollViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		47430CC31E0CC92800E6F168 /* SlideImageScrollViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47430CD31E0CC92800E6F168 /* Build configuration list for PBXNativeTarget "SlideImageScrollViewUITests" */;
+			buildPhases = (
+				8630094AB68C15BD12521BF2 /* [CP] Check Pods Manifest.lock */,
+				47430CC01E0CC92800E6F168 /* Sources */,
+				47430CC11E0CC92800E6F168 /* Frameworks */,
+				47430CC21E0CC92800E6F168 /* Resources */,
+				27C4941536FC2A0AB46269FF /* [CP] Embed Pods Frameworks */,
+				D9E6458ED0CF28BB931DBD1B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				47430CC61E0CC92800E6F168 /* PBXTargetDependency */,
+			);
+			name = SlideImageScrollViewUITests;
+			productName = SlideImageScrollViewUITests;
+			productReference = 47430CC41E0CC92800E6F168 /* SlideImageScrollViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		47430C9D1E0CC92700E6F168 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = com.maramara;
+				TargetAttributes = {
+					47430CA41E0CC92700E6F168 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = H3F25LDX4E;
+						ProvisioningStyle = Automatic;
+					};
+					47430CB81E0CC92800E6F168 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = H3F25LDX4E;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 47430CA41E0CC92700E6F168;
+					};
+					47430CC31E0CC92800E6F168 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = H3F25LDX4E;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 47430CA41E0CC92700E6F168;
+					};
+				};
+			};
+			buildConfigurationList = 47430CA01E0CC92700E6F168 /* Build configuration list for PBXProject "SlideImageScrollView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 47430C9C1E0CC92700E6F168;
+			productRefGroup = 47430CA61E0CC92700E6F168 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				47430CA41E0CC92700E6F168 /* SlideImageScrollView */,
+				47430CB81E0CC92800E6F168 /* SlideImageScrollViewTests */,
+				47430CC31E0CC92800E6F168 /* SlideImageScrollViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		47430CA31E0CC92700E6F168 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47430CB31E0CC92700E6F168 /* LaunchScreen.storyboard in Resources */,
+				47430CB01E0CC92700E6F168 /* Assets.xcassets in Resources */,
+				47430CAE1E0CC92700E6F168 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47430CB71E0CC92800E6F168 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47430CC21E0CC92800E6F168 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07EB4A53BF3A36D44BF83C31 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlideImageScrollViewTests/Pods-SlideImageScrollViewTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		11129686A379831D2B43878D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlideImageScrollViewTests/Pods-SlideImageScrollViewTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		206E409FB97ED6CB0DA13B2F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		27C4941536FC2A0AB46269FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlideImageScrollViewUITests/Pods-SlideImageScrollViewUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54526DC74DB13305B2CCD21B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlideImageScrollView/Pods-SlideImageScrollView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59C6E978C8027793985B6416 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8630094AB68C15BD12521BF2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9DD3A125E5438D8E554C4413 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlideImageScrollView/Pods-SlideImageScrollView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9E6458ED0CF28BB931DBD1B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlideImageScrollViewUITests/Pods-SlideImageScrollViewUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47430CA11E0CC92700E6F168 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47430CD91E0CC97100E6F168 /* SlideImageScrollView.swift in Sources */,
+				47430CAB1E0CC92700E6F168 /* ViewController.swift in Sources */,
+				47430CA91E0CC92700E6F168 /* AppDelegate.swift in Sources */,
+				47430CDB1E0D056A00E6F168 /* ImageBannerListModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47430CB51E0CC92800E6F168 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47430CBE1E0CC92800E6F168 /* SlideImageScrollViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47430CC01E0CC92800E6F168 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47430CC91E0CC92800E6F168 /* SlideImageScrollViewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		47430CBB1E0CC92800E6F168 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47430CA41E0CC92700E6F168 /* SlideImageScrollView */;
+			targetProxy = 47430CBA1E0CC92800E6F168 /* PBXContainerItemProxy */;
+		};
+		47430CC61E0CC92800E6F168 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47430CA41E0CC92700E6F168 /* SlideImageScrollView */;
+			targetProxy = 47430CC51E0CC92800E6F168 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		47430CAC1E0CC92700E6F168 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47430CAD1E0CC92700E6F168 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		47430CB11E0CC92700E6F168 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47430CB21E0CC92700E6F168 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		47430CCB1E0CC92800E6F168 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		47430CCC1E0CC92800E6F168 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		47430CCE1E0CC92800E6F168 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2142CF1E5B8D659D8B88D56B /* Pods-SlideImageScrollView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = H3F25LDX4E;
+				INFOPLIST_FILE = SlideImageScrollView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maramara.SlideImageScrollView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		47430CCF1E0CC92800E6F168 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BAB514CB941BF3C5CB66A4E /* Pods-SlideImageScrollView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = H3F25LDX4E;
+				INFOPLIST_FILE = SlideImageScrollView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maramara.SlideImageScrollView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		47430CD11E0CC92800E6F168 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E1D76E244A9ED4C1A5D9359 /* Pods-SlideImageScrollViewTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = H3F25LDX4E;
+				INFOPLIST_FILE = SlideImageScrollViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maramara.SlideImageScrollViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlideImageScrollView.app/SlideImageScrollView";
+			};
+			name = Debug;
+		};
+		47430CD21E0CC92800E6F168 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90E6DC2737212C53D20DDE2C /* Pods-SlideImageScrollViewTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = H3F25LDX4E;
+				INFOPLIST_FILE = SlideImageScrollViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maramara.SlideImageScrollViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlideImageScrollView.app/SlideImageScrollView";
+			};
+			name = Release;
+		};
+		47430CD41E0CC92800E6F168 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 876C725CCE3446BFD81706A8 /* Pods-SlideImageScrollViewUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = H3F25LDX4E;
+				INFOPLIST_FILE = SlideImageScrollViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maramara.SlideImageScrollViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SlideImageScrollView;
+			};
+			name = Debug;
+		};
+		47430CD51E0CC92800E6F168 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 881AC77F7061116064AF9902 /* Pods-SlideImageScrollViewUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = H3F25LDX4E;
+				INFOPLIST_FILE = SlideImageScrollViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maramara.SlideImageScrollViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SlideImageScrollView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		47430CA01E0CC92700E6F168 /* Build configuration list for PBXProject "SlideImageScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47430CCB1E0CC92800E6F168 /* Debug */,
+				47430CCC1E0CC92800E6F168 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47430CCD1E0CC92800E6F168 /* Build configuration list for PBXNativeTarget "SlideImageScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47430CCE1E0CC92800E6F168 /* Debug */,
+				47430CCF1E0CC92800E6F168 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		47430CD01E0CC92800E6F168 /* Build configuration list for PBXNativeTarget "SlideImageScrollViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47430CD11E0CC92800E6F168 /* Debug */,
+				47430CD21E0CC92800E6F168 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		47430CD31E0CC92800E6F168 /* Build configuration list for PBXNativeTarget "SlideImageScrollViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47430CD41E0CC92800E6F168 /* Debug */,
+				47430CD51E0CC92800E6F168 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 47430C9D1E0CC92700E6F168 /* Project object */;
+}
