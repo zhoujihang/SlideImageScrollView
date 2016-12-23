@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ViewController: UIViewController {
-
+    
     fileprivate lazy var imageScrollView1 = SlideImageScrollView(frame: CGRect.zero)
     fileprivate lazy var imageScrollView2 = SlideImageScrollView(frame: CGRect.zero)
     
@@ -19,6 +20,7 @@ class ViewController: UIViewController {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,6 +54,7 @@ class ViewController: UIViewController {
     func setupData() {
         self.imageScrollView1.imageBannerListModel = ImageBannerListModel.fakeModel()
         self.imageScrollView2.imageBannerListModel = ImageBannerListModel.fakeModel()
+        // self.imageScrollView2.imageBannerListModel = nil
         
         self.imageScrollView1.placeHoldImage = UIImage(named: "默认图片.jpg")
         self.imageScrollView2.placeHoldImage = UIImage(named: "默认图片.jpg")

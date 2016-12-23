@@ -9,6 +9,8 @@
 import UIKit
 import Kingfisher
 
+let kNoImageUrl = "http://www.baidu.com"
+
 protocol SlideImageScrollViewDelegate {
     func slideImageScrollView(_ view: SlideImageScrollView, didClick imageModel: ImageBannerModel)
 }
@@ -31,6 +33,8 @@ class SlideImageScrollView: UIView {
     fileprivate let imageView1 = UIImageView()
     fileprivate let imageView2 = UIImageView()
     fileprivate let imageView3 = UIImageView()
+    fileprivate let pageControl = UIPageControl()
+    
     fileprivate var timer: Timer?
     
     fileprivate var viewWidth: CGFloat = 0              // 记录当前视图宽度，用来判断是否需要重设中点位置
@@ -55,6 +59,7 @@ class SlideImageScrollView: UIView {
         self.backdropScrollView.addSubview(self.imageView1)
         self.backdropScrollView.addSubview(self.imageView2)
         self.backdropScrollView.addSubview(self.imageView3)
+        self.addSubview(self.pageControl)
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(tapImageView(tap:)))
         self.imageView2.addGestureRecognizer(tap)
@@ -71,6 +76,9 @@ class SlideImageScrollView: UIView {
         self.imageView2.clipsToBounds = true
         self.imageView3.contentMode = .scaleAspectFill
         self.imageView3.clipsToBounds = true
+        
+        self.pageControl.currentPageIndicatorTintColor = .red
+        self.pageControl.pageIndicatorTintColor = .white
     }
     func setupData() {
         self.resetCurrentIndex(0)
@@ -88,6 +96,8 @@ class SlideImageScrollView: UIView {
         self.backdropScrollView.frame = bounds
         self.backdropScrollView.contentSize = CGSize(width: width*3, height: height)
         self.isPreparedToScroll = true
+        
+        self.pageControl.center = CGPoint(x: ceil(width*0.5), y: height-20)
         
         self.imageView1.frame = CGRect(x: 0, y: 0, width: width, height: height)
         self.imageView2.frame = CGRect(x: width, y: 0, width: width, height: height)
@@ -155,9 +165,12 @@ extension SlideImageScrollView: UIScrollViewDelegate {
         let url2 = URL(string: listModel.list[index2].imageUrl)
         let url3 = URL(string: listModel.list[index3].imageUrl)
         
+        // 就算是disk类型，sdk内部设置图片的操作也是异步的
         self.imageView1.kf.setImage(with: url1, placeholder: self.placeHoldImage)
         self.imageView2.kf.setImage(with: url2, placeholder: self.placeHoldImage)
         self.imageView3.kf.setImage(with: url3, placeholder: self.placeHoldImage)
+        
+        self.pageControl.currentPage = self.currentIndex
     }
     fileprivate func resetContentOffset() {
         let width = self.bounds.size.width
@@ -168,25 +181,34 @@ extension SlideImageScrollView: UIScrollViewDelegate {
 extension SlideImageScrollView {
     fileprivate func didSetImageListModel() {
         guard let listModel = self.imageBannerListModel else {
+            self.resetAllImageView()
             self.didSetPlaceHolder()
+            self.pageControl.numberOfPages = 0
             return
         }
         guard !listModel.list.isEmpty else {
+            self.resetAllImageView()
             self.didSetPlaceHolder()
+            self.pageControl.numberOfPages = 0
             return
         }
         self.resetCurrentIndex(0)
+        self.pageControl.numberOfPages = listModel.list.count
     }
 }
 // MARK: - 扩展 PlaceHolder
 extension SlideImageScrollView {
     fileprivate func didSetPlaceHolder() {
         if self.imageBannerListModel == nil || self.imageBannerListModel!.list.isEmpty {
-            self.imageView1.image = self.placeHoldImage
-            self.imageView2.image = self.placeHoldImage
-            self.imageView3.image = self.placeHoldImage
+            self.resetAllImageView()
             return
         }
+    }
+    fileprivate func resetAllImageView() {
+        let url = URL(string: kNoImageUrl)
+        self.imageView1.kf.setImage(with: url, placeholder: self.placeHoldImage)
+        self.imageView2.kf.setImage(with: url, placeholder: self.placeHoldImage)
+        self.imageView3.kf.setImage(with: url, placeholder: self.placeHoldImage)
     }
 }
 
